@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mirza Aydemir - Portfolio
+
+Personal portfolio website for Mirza Aydemir, MFin Candidate (Capital Markets). Showcasing experience in FP&A, financial modeling, and econometrics.
+
+## Tech Stack
+
+- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animation**: [Framer Motion](https://www.framer.com/motion/)
+- **Language**: TypeScript
 
 ## Getting Started
 
-First, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment (CI/CD)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses a custom CI/CD pipeline for deployment:
 
-## Learn More
+1.  **Container Registry**: GitHub Container Registry (`ghcr.io`).
+2.  **Hosting**: Self-hosted [Dokploy](https://dokploy.com/).
+3.  **Workflow**:
+    -   Pushes to `main` trigger a GitHub Action.
+    -   The action lints, builds, and pushes a Docker image to `ghcr.io`.
+    -   A webhook triggers Dokploy to pull the new image and redeploy.
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Dynamic SEO**: Automatically generated Open Graph images.
+- **Optimized Builds**: Dockerized with Next.js standalone output.
+- **Markdown Content**: Case studies rendered from Markdown files.

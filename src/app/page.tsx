@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import FadeIn from "@/components/FadeIn";
 import Navbar from "@/components/Navbar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -28,15 +29,15 @@ export default function Home() {
               </p>
 
               <div className="flex flex-wrap gap-6 pt-4 text-sm font-semibold tracking-widest uppercase">
-                <a href="/resume" className="border-b border-black pb-1 hover:text-neutral-600 hover:border-neutral-600 transition-colors">
+                <Link href="/resume" className="border-b border-black pb-1 hover:text-neutral-600 hover:border-neutral-600 transition-colors">
                   View Resume
-                </a>
-                <a href="/cases" className="border-b border-black pb-1 hover:text-neutral-600 hover:border-neutral-600 transition-colors">
+                </Link>
+                <Link href="/cases" className="border-b border-black pb-1 hover:text-neutral-600 hover:border-neutral-600 transition-colors">
                   Projects & Models
-                </a>
-                <a href="#correspondence" className="border-b border-black pb-1 hover:text-neutral-600 hover:border-neutral-600 transition-colors">
+                </Link>
+                <Link href="#correspondence" className="border-b border-black pb-1 hover:text-neutral-600 hover:border-neutral-600 transition-colors">
                   Contact
-                </a>
+                </Link>
               </div>
             </div>
           </FadeIn>
@@ -85,7 +86,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-3xl font-medium mb-4">Project Intern</h3>
                 <p className="text-neutral-700 max-w-2xl">
-                  Researched AI's impact on the North American labour market, reviewing 40+ sources across sectors. Executed regression analysis using secondary data to build a predictive model and derive recommendations from key variable relationships.
+                  Researched AI&apos;s impact on the North American labour market, reviewing 40+ sources across sectors. Executed regression analysis using secondary data to build a predictive model and derive recommendations from key variable relationships.
                 </p>
               </div>
 
@@ -217,7 +218,7 @@ export default function Home() {
       <FadeIn>
         <footer className="mt-20 pt-8 border-t border-neutral-400/30 flex flex-col md:flex-row justify-between items-center text-xs text-neutral-500 gap-4">
           <span>© 2026 Mirza Aydemir</span>
-          <span className="italic">"The market is a device for transferring money from the impatient to the patient."</span>
+          <span className="italic">&quot;The market is a device for transferring money from the impatient to the patient.&quot;</span>
         </footer>
       </FadeIn>
     </div>

@@ -29,7 +29,7 @@ export function getCaseBySlug(slug: string): Case | null {
             finding: data.finding,
             content,
         };
-    } catch (e) {
+    } catch {
         return null;
     }
 }
