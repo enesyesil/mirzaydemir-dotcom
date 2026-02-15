@@ -20,7 +20,7 @@ export default function ResumeSection() {
                         A detailed overview of my academic background, research experience, and professional history.
                     </p>
 
-                    <div className="flex gap-4">
+                    <div className="flex flex-wrap gap-4">
                         <a
                             href="/maydemir-resume.pdf"
                             download

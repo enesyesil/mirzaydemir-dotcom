@@ -216,7 +216,7 @@ export default function Home() {
       </main>
 
       <FadeIn>
-        <footer className="mt-20 pt-8 border-t border-neutral-400/30 flex flex-col md:flex-row justify-between items-center text-xs text-neutral-500 gap-4">
+        <footer className="mt-20 pt-8 border-t border-neutral-400/30 flex flex-col md:flex-row justify-between items-center text-xs text-neutral-500 gap-4 text-center">
           <span>© 2026 Mirza Aydemir</span>
           <span className="italic">&quot;The market is a device for transferring money from the impatient to the patient.&quot;</span>
         </footer>
